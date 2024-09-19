@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Of YoYo Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="flex items-center justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <section id="top" class="flex items-center justify-around w-full">
+                        <div class="total-balance flex items-center">
+                            <span class="material-symbols-outlined text-5xl">
+                                request_quote
+                            </span>
+                            <div class="ml-2">
+                                <span id="available-balance" class="text-4xl font-bold">5000</span>
+                                <h2>Available Balance</h2>
+                            </div>
+                        </div>
+                        <button id="logout-btn" class="btn">
+                            <span class="material-symbols-outlined">
+                                logout
+                            </span>
+                            Log Out
+                        </button>
+                    </section>
+                    <div class="divider"></div>
+                    <section id="greet" class="w-10/12">
+                        <h2 class="text-2xl font-semibold font-serif">Welcome to YoYo Bank</h2>
+                        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                    </section>
+                    <div class="divider"></div>
+                    <section id="toggled">
+                        <button id="add-moneys" class="btn btn-success btn-lg">Add Money</button>
+                        <button id="cashout-money-btn" class="btn  btn-error btn-lg">Cash Out</button>
+                    </section>
+                    <section id="add-money" class="mt-5">
+                        <form>
+                            <label class="input input-bordered flex items-center gap-4 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                    class="h-4 w-4 opacity-70">
+                                </svg>
+                                <input id="amount-field" type="number" class="grow w-11/12" placeholder="Amount"
+                                    required />
+                            </label>
+                            <label class="input input-bordered flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                    class="h-4 w-4 opacity-70">
+                                </svg>
+                                <input id="password-field" type="password" class="grow" placeholder="Password"
+                                    required />
+                            </label>
+                            <div class="mt-3">
+                                <button id="add-money-btn" class="btn btn-wide">Add Money</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section id="cashout-money" class="mt-5 hidden">
+                        <form>
+                            <label class="input input-bordered flex items-center gap-4 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                    class="h-4 w-4 opacity-70">
+                                </svg>
+                                <input id="amount-field" type="number" class="grow w-11/12" placeholder="Amount"
+                                    required />
+                            </label>
+                            <label class="input input-bordered flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                    class="h-4 w-4 opacity-70">
+                                </svg>
+                                <input id="password-field" type="password" class="grow" placeholder="Password"
+                                    required />
+                            </label>
+                            <div class="mt-3">
+                                <button id="add-money-btn" class="btn btn-wide">Cash Out</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/addmoney.js"></script>
+    <script src="./js/cashoutmoney.js"></script>
+    <script src="./js/toggled.js"></script>
+</body>
+
+</html>
